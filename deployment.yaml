@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: github-actions-demo
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: github-actions-demo
+
+  template:
+    metadata:
+      labels:
+        app: github-actions-demo
+
+    spec:
+      imagePullSecrets:
+        - name: ghcr-secret
+
+      containers:
+        - name: app
+          image: ghcr.io/bobir-devops/github-actions-demo:latest
+          ports:
+            - containerPort: 8000
