@@ -26,7 +26,7 @@ jobs:
 
       - name: Run tests
         env:
-          PYTHONPATH:
+          PYTHONPATH: .
         run: python -m pytest
 
       - name: Login to GHCR
