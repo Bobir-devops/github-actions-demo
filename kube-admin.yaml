@@ -4,7 +4,7 @@ clusters:
     certificate-authority: /home/bobur/.minikube/ca.crt
     extensions:
     - extension:
-        last-update: Fri, 21 Aug 2026 19:15:42 +05
+        last-update: Tue, 25 Aug 2026 18:01:42 +05
         provider: minikube.sigs.k8s.io
         version: v1.38.1
       name: cluster_info
@@ -15,7 +15,7 @@ contexts:
     cluster: minikube
     extensions:
     - extension:
-        last-update: Fri, 21 Aug 2026 19:15:42 +05
+        last-update: Tue, 25 Aug 2026 18:01:42 +05
         provider: minikube.sigs.k8s.io
         version: v1.38.1
       name: context_info
